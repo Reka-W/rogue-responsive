@@ -185,12 +185,12 @@ header nav ul li a{
 	border-top: 3px solid #77a466;
 }
 
-.main-title h2 {
+#about h2 {
 	text-align: left;
 	padding: 5px 0;
 	color: #77a466;
 }
-.main-title p {
+#about p {
 	padding: 0;
 	font-size: 1em;
 	line-height: 1.5625em;
@@ -260,7 +260,7 @@ footer span {
     /* Tablet styles here */
 
 		.bottom-section {
-				/*flex-flow: row nowrap;*/
+				flex-flow: row nowrap;
 				border-top: 1px solid #eee;
 
 				align-items: flex-start;
@@ -268,18 +268,51 @@ footer span {
 
 }
 
-		.section-one,
-		.section-two,
-		.section-three {
-				border-top: none;
-				flex-basis: 30%;
+header h1 {
+  font-size: 2.175em;
 }
 
-		.section-two {
-				border-left: 1px solid #eee;
-				border-right: 1px solid #eee;
-				padding: 0 20px;
-	}
+nav ul {
+  font-size: 1em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+#about p {
+  font-size: 1em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+#menu ul {
+  font-size: 1em;
+}
+
+#reviews p,
+#menu p,
+#contact p {
+  font-size: 1em;
+}
+
+#reviews,
+#menu,
+#contact {
+		width: 30%;
+		border-top: 1px solid #eee;
+    padding-top: 1em;
+}
+
+#reviews {
+  padding: 1em 1.5em;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  margin: 0 2em;
+}
+}
 
 /***** Desktop *****/
 @media all and (min-width:1200px) {
@@ -291,9 +324,10 @@ header {
 
 header h1 {
 		width: 30%;
-		padding: 0;
+		padding: .8em 0 .5em 0;
 		border-bottom: none;
 		text-align: left;
+    font-size: 1.875em;
 }
 
 header nav {
@@ -304,8 +338,7 @@ header nav ul {
 	display: flex;
 	justify-content: space-between;
 }
-
-
+}
 
 /* ==========================================================================
    Helper classes
@@ -399,7 +432,7 @@ header nav ul {
   /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
+@media print, 
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
@@ -480,4 +513,3 @@ header nav ul {
     page-break-after: avoid;
   }
 }
-
